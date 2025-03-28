@@ -1,198 +1,203 @@
-body{
+body {
     background-image: url('images/dynamic_wroopencup_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
-body img{
-    width: 100%;
-    height: 100%;
+body img {
+    max-width: 100%;
+    height: auto;
 }
 
-#header{
+#header {
     width: 100%;
     height: 10vh;
+    min-height: 60px;
     background-color: #01050E;
-    float: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-.social_holder{
+.social_holder {
     width: 10vh;
-    height: 100%;
-    float: left;
+    height: 80%;
+    min-width: 40px;
 }
 
-.social_holder img{
+.social_holder img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
-#kontakt_holder{
-    width: 20vh;
+#kontakt_holder {
+    width: auto;
     height: 100%;
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
-#kontakt_holder h1{
+#kontakt_holder h1 {
     color: #ffffff;
+    font-size: clamp(12px, 3vh, 24px);
+    margin: 0;
+    padding: 0 10px;
 }
 
-#kontakt_holder button{
-    background-color: #01050e00;
+#kontakt_holder button {
+    background-color: transparent;
     color: white;
-    width: 100%;
-    height: 100%;
-    font-size: 3vh;
+    font-size: clamp(12px, 3vh, 24px);
     border: none;
+    padding: 0 10px;
+    height: 100%;
+    white-space: nowrap;
 }
 
-#logo_holder{
-    height: 11%;
-    width: 25vh;
+#logo_holder {
+    height: 80%;
+    width: auto;
+    max-width: 25vh;
     position: absolute;
-    top: 5%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#logo_holder img{
+#logo_holder img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
-#slider{
+#slider {
     width: 100%;
-    height: 10vh;
+    height: auto;
+    min-height: 10vh;
     background-color: #01050E;
-    float: left;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }
 
-#slider h1{
+#slider h1 {
     color: white;
+    font-size: clamp(16px, 3vh, 28px);
+    text-align: center;
+    padding: 0 10px;
 }
 
-#main{
+#main {
     width: 100%;
     display: flex;
     justify-content: center;
-    float: left;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-#content{
-    width: 100vh;
-    background-color: rgba(255, 255, 255, 0.450);
-    padding: 5vh;
-    font-size: 2vh;
-    font-family: Bebas Neue;
-}
-
-#content img{
-    width: 100vh;
-    height: 50vh;
-}
-
-#sponsors{
+#content {
     width: 100%;
-    float: left;
+    max-width: 100vh;
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 3vh;
+    font-size: clamp(14px, 2vh, 20px);
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+}
+
+#content img {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+}
+
+#sponsors {
+    width: 100%;
     background-color: #01050E;
     text-align: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
 
-#sponsors h1{
+#sponsors h1 {
     color: white;
+    font-size: clamp(18px, 4vh, 32px);
 }
 
-#sponsors img{
-    width: 50vh;
-    height: 20vh;
+#sponsors img {
+    width: 100%;
+    max-width: 50vh;
+    height: auto;
+    max-height: 20vh;
+    margin: 10px auto;
+    object-fit: contain;
 }
 
 #footer {
     width: 100%;
     height: 5vh;
-    float: left;
+    min-height: 40px;
     background-color: black;
 }
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 #plakat img {
-    width: 100vh;
-    height: 150vh;
+    width: 100%;
+    height: auto;
+    max-height: none;
 }
 
-@media screen and (max-width: 767px) {
-    
-    body{
-        background-image: url('images/dynamic_wroopencup_background.jpg');
+/* Media queries dla mniejszych urządzeń */
+@media (max-width: 768px) {
+    #header {
+        height: 8vh;
+        min-height: 50px;
     }
     
-    body img{
-        width: 100%;
-        height: 100%;
+    #logo_holder {
+        height: 70%;
     }
     
-    #header{
-        width: 100%;
-        height: 10vh;
-        background-color: #01050E;
-        float: left;
+    #kontakt_holder h1, #kontakt_holder button {
+        font-size: clamp(10px, 2.5vh, 18px);
     }
-
-    #main{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        float: left;
-        margin-top: 10vh;
+    
+    #content {
+        padding: 2vh;
     }
-
-    #content{
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.450);
-        padding: 5vh;
-        font-size: 2vh;
-        font-family: Bebas Neue;
+    
+    #slider h1 {
+        font-size: clamp(14px, 2.5vh, 22px);
     }
+}
 
-    #content img{
-        width: 100vh;
-        height: 50vh;
+@media (max-width: 480px) {
+    #header {
+        height: 6vh;
+        min-height: 40px;
     }
-
-    #main{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        float: left;
-        margin-top: 10vh;
+    
+    .social_holder {
+        width: 8vh;
     }
-
-    #logo_holder{
-        height: 11%;
-        width: 25%;
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    
+    #kontakt_holder {
+        display: none; /* Można ukryć na bardzo małych ekranach */
     }
-
-    #sponsors{
-        width: 100%;
-        float: left;
-        background-color: #01050E;
-        text-align: center;
+    
+    #logo_holder {
+        height: 60%;
     }
-
-    #footer {
-        width: 100%;
-        height: 5vh;
-        float: left;
-        background-color: black;
+    
+    #content {
+        font-size: clamp(12px, 1.8vh, 16px);
     }
 }
