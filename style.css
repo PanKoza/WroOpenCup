@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-image: url('images/dynamic_wroopencup_background.jpg');
 }
@@ -185,4 +186,193 @@ body img{
         float: left;
         background-color: black;
     }
+=======
+body{
+    background-image: url('images/dynamic_wroopencup_background.jpg');
+}
+
+body img{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 10vh;
+    background-color: #01050E;
+    float: left;
+}
+
+.social_holder{
+    width: 10vh;
+    height: 100%;
+    float: left;
+}
+
+.social_holder img{
+    width: 100%;
+    height: 100%;
+}
+
+#kontakt_holder{
+    width: 20vh;
+    height: 100%;
+    float: right;
+}
+
+#kontakt_holder h1{
+    color: #ffffff;
+}
+
+#kontakt_holder button{
+    background-color: #01050e00;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 3vh;
+    border: none;
+}
+
+#logo_holder{
+    height: 11%;
+    width: 25vh;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo_holder img{
+    height: 100%;
+    width: 100%;
+}
+
+#slider{
+    width: 100%;
+    height: 10vh;
+    background-color: #01050E;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#slider h1{
+    color: white;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-top: 10vh;
+}
+
+#content{
+    width: 100vh;
+    background-color: rgba(255, 255, 255, 0.450);
+    padding: 5vh;
+    font-size: 2vh;
+    font-family: Bebas Neue;
+}
+
+#content img{
+    width: 100vh;
+    height: 50vh;
+}
+
+#sponsors{
+    width: 100%;
+    float: left;
+    background-color: #01050E;
+    text-align: center;
+}
+
+#sponsors h1{
+    color: white;
+}
+
+#sponsors img{
+    width: 50vh;
+    height: 20vh;
+}
+
+#footer {
+    width: 100%;
+    height: 5vh;
+    float: left;
+    background-color: black;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#plakat img {
+    width: 100vh;
+    height: 150vh;
+}
+
+@media screen and (max-width: 767px) {
+    #header{
+        width: 100vh;
+        height: 10vh;
+        background-color: #01050E;
+        float: left;
+    }
+
+    #main{
+        width: 100vh;
+        display: flex;
+        justify-content: center;
+        float: left;
+        margin-top: 10vh;
+    }
+
+    #content{
+        width: 100vh;
+        background-color: rgba(255, 255, 255, 0.450);
+        padding: 5vh;
+        font-size: 2vh;
+        font-family: Bebas Neue;
+    }
+
+    #content img{
+        width: 90vh;
+        height: 50vh;
+    }
+
+    #main{
+        width: 100vh;
+        display: flex;
+        justify-content: center;
+        float: left;
+        margin-top: 10vh;
+    }
+
+    #logo_holder{
+        height: 11%;
+        width: 25vh;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #sponsors{
+        width: 100vh;
+        float: left;
+        background-color: #01050E;
+        text-align: center;
+    }
+
+    #footer {
+        width: 100vh;
+        height: 5vh;
+        float: left;
+        background-color: black;
+    }
+>>>>>>> ae31409216269ecd220751bc5335db672333c5a7
 }
