@@ -112,12 +112,13 @@ body img {
     font-size: clamp(14px, 2vh, 20px);
     font-family: "Bebas Neue", sans-serif;
     box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
 }
 
 #content img {
     width: 100%;
     height: auto;
-    max-height: 50vh;
 }
 
 #sponsors {
