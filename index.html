@@ -1,100 +1,175 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>WroOpenCup</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="scripts/jquery-3.7.1.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="header">
-            <div class="social_holder">
-                <a href="https://www.facebook.com/profile.php?id=61573803602750&locale=pl_PL">
-                    <img src="images/—Pngtree—facebook icon_3584895 2 1.jpg">
-                </a>
-            </div>
-            <div id="logo_holder">
-                <a href="index.html">
-                    <img src="images/Messenger_creation_38E7FC9E-A65F-41FD-8AF9-B81C1DE0E9EF.jpg">
-                </a>
-            </div>
-            <div id="slider">
-                <h1>e-mail: wroopencup@gmail.com</h1>
-            </div>
-            <script>
-                $('document').ready(function()
-            {
-                $('#slider').hide()
-            }
-            );
-            </script>
-            <script>
-                $('#KONTAKT').click(function()
-            {
-                $('#slider').slideToggle()
-            }
-            );
-            </script>
-        </div>
-        <div id="main">
-            <div id="content">
-                <h1> WroOpenCup edycja 4 "Ostatni krok do chwały!"" </h1>
-                <p></p>
-                <h2>15 czerwca 2025 | Wrocław boiska przy ul. Spółdzielczej / Parkowej / Dembowskiego</h2>
-                <p></p>
-                <h2>Wpisowe: tylko 25 zł / osoba</h2>
-                <p></p>
-                <p>Mecze prowadzone przez licencjonowanego sędziego!</p>
-                <p>To nie będzie zwykły turniej…</p>
-                <p>To będzie finałowa walka o marzenia.</p>
-                <p>Ostatni turniej eliminacyjny sezonu ostatnia szansa, by zdobyć bilet do wielkiego finału!</p>
-                <p>A tam czeka przepustka na turniej ogólnopolski!</p>
-                <p>Dlaczego warto być częścią tego dnia?</p>
-                <p>⚽ Piłka w czystej postaci pasja, drużyna, rywalizacja</p>
-                <p>⏱ Liczy się każdy mecz, każda sekunda, każda decyzja</p>
-                <p>🛡 Sędzia z licencją pełen profesjonalizm</p>
-                <p>🏆 Stawka większa niż puchar gra toczy się o coś więcej</p>
-                <p>Jeśli wierzysz, że piłka nożna to coś więcej niż tylko sport…</p>
-                <p>Jeśli masz w sobie ogień, który nie pozwala Ci odpuścić…</p>
-                <p>Jeśli chcesz zostawić coś po sobie…</p>
-                <p>To jest Twój turniej. Twój czas. Twój WroOpenCup.</p>
-                <p>Nie oglądaj zagraj. Nie czekaj zgłoś się.</p>
-                <p>Zrób coś, co zostanie w pamięci na długo.</p>
-                <p>⚽🔥 WROOPEN TO MY. WROCŁAW TO BOISKO. TY TO HISTORIA. 🔥⚽</p>
-                <p></p>
-                <img src="images/1000011334.jpg">
-                <h1>WroOpenCup – Turniej dla Każdego!</h1>
-                <p></p>
-                <p>WroOpenCup to niezwykły turniej piłkarski, w którym liczy się pasja, emocje i prawdziwa sportowa rywalizacja na najwyższym poziomie. To wydarzenie, które łączy wszystkich miłośników futbolu – niezależnie od wieku, umiejętności czy doświadczenia. U nas każdy zawodnik, niezależnie od tego, czy dopiero rozpoczyna swoją piłkarską przygodę, czy ma za sobą lata gry, może poczuć dreszczyk emocji, jaki towarzyszy finałom największych rozgrywek świata, takich jak Liga Mistrzów.
+<head>
+  <meta charset="UTF-8">
+  <title>WroOpenCup - najlepsze wydarzenia sportowe we Wrocławiu</title>
+  <meta name="description" content="Zapisz się na najlepsze wydarzenia sportowe we Wrocławiu. Sprawdź naszą ofertę i dołącz do społeczności sportowej!">
+  <meta name="keywords" content="Wrocław, wydarzenia sportowe, sport, społeczność, Open Cup">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="dist/img/Messenger_creation_38E7FC9E-A65F-41FD-8AF9-B81C1DE0E9EF.jpg">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:700,900&display=swap" rel="stylesheet">
+  <script src="dist/js/jquery-3.7.1.js"></script>
+  <script src="dist/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <button class="header__hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="header__nav" id="headerNav">
+      <a href="noga.html" class="header__menu-button">Piłka Nożna 6v6</a>
+      <a href="siatka.html" class="header__menu-button">Siatkówka Plażowa</a>
+      <a href="zapisy.html" class="header__menu-button">Zapisz się na turniej</a>
+      <a href="terminarz.html" class="header__menu-button">Zobacz terminarz</a>
+      <a href="kontakt.html" class="header__menu-button">Kontakt</a>
+    </nav>
+    <h1>WroOpenCup</h1>
+  </header>
 
-                    WroOpenCup to nie tylko sport, ale również niezapomniana atmosfera, pełna pozytywnej energii, fair play i ducha zespołowej walki. To okazja do sprawdzenia swoich umiejętności, przeżycia niesamowitych chwil na boisku i stworzenia wspomnień, które zostaną z Tobą na zawsze. Niezależnie od wyniku, każdy uczestnik może liczyć na niesamowite emocje, zdrową rywalizację i świetną zabawę.</p>
-                <p></p>
-                <img src="images/1000011272.jpg">
-                <h2>JAK SIĘ ZAPISAĆ?</h2>
-                <p></p>
-                <p>Nie masz drużyny? Żaden problem! Wystarczy wypełnić krótką ankietę, a my znajdziemy dla Ciebie zespół i zadbamy o resztę. Ty przychodzisz, grasz i przeżywasz niezapomniane piłkarskie emocje. Zapisz swoją drużynę już teraz! Wyślij zgłoszenie na wroopencup@gmail.com i dołącz do gry!</p>
-                <p></p>
-                <p>Dołącz do nas i stań się częścią WroOpenCup – miejsca, gdzie liczy się gra, zabawa i sportowa adrenalina!</p>
-                <p></p>
-                <P>Ogromne dzięki dla wszystkich, którzy wzięli udział w 1. edycji turnieju WroOpenCup! To było naprawdę coś – emocje, rywalizacja i pasja na najwyższym poziomie!
-                    Gratulacje dla najlepszych drużyn!</p>
-                <p>🥇 TEAM MIKRO – zasłużony mistrz!</p>
-                <p>🥈 KS EMERYCI – świetna walka!</p>
-                <p>🥉 SMYKI AZAZELA – pokazali klasę!</p>
-                <p></p>
-                <img src="images/20250511_172416.jpg">
-                <p></p>
-                
-            </div>
+  <landing>
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="dist/img/Film_Reklamowy_Piłka_Nożna_Siatkówka.mp4" type="video/mp4">
+    </video>
+    <div class="landing__content">
+      <h2>NAJLEPSZA ATMOSFERA DLA MŁODZIEŻY I DOROSŁYCH</h2>
+      <h1>PRZEŻYJ NAJLEPSZE EMOCJE SPORTOWE</h1>
+      <h3>Turnieje Piłki Nożnej 6v6</h3>
+      <h3>Turnieje Siatkówki Plażowej</h3>
+      <a href="zapisy.html" id="landing_button">DOŁĄCZ DO NAS!</a>
+    </div>
+  </landing>
+
+  <main>
+
+    <section id="events">
+      <h2>Nadchodzące wydarzenia</h2>
+      <div class="events__list">        
+        <article class="event">
+          <img src="dist/img/Gemini_Generated_Image_7v9zav7v9zav7v9z.png" alt="Siatkówka Plażowa" class="event__image">
+          <h3>Turniej Siatkówki Plażowej</h3>
+          <p>Data: 16 sierpnia 2025</p>
+          <p>Miejsce: Kąpielisko Morskie Oko, Wrocław</p>
+          <a href="zapisy.html" class="event__register-button">Zapisz się</a>
+        </article>
+        <article class="event">
+          <img src="dist/img/516492180_122143844228793453_1768182744847155263_n.jpg" alt="Piłka Nożna 6v6" class="event__image">
+          <h3>Turniej Piłki Nożnej 6v6</h3>
+          <p>Data: 23 sierpnia 2025</p>
+          <p>Miejsce: Stadion Miejski, Wrocław</p>
+          <a href="zapisy.html" class="event__register-button">Zapisz się</a>
+        </article>
+
+    </section>
+
+    <section id="about">
+      <h1>O nas</h1>
+      <h2>Jesteśmy społecznością pasjonatów sportu we Wrocławiu.</h2>
+      <h3>Zajmujemy się organizowaniem wydarzeń sportowych we Wrocławiu. Robimy jedne z najlepszych wydarzeń sportowych dostępnych dla każdego w przystępnej cenie.</h3> 
+      <p>Naszym flagowym wydarzeniem jest organizowanie turniejów piłkarskich piłki nożnej 6 na 6 SOCCA. <b>Zebraliśmy już ponad 400 zawodników</b> walczących o przepustki na najbardziej prestiżowe turnieje w Polsce, gdzie mają szanse pokazać się obserwatorom z kadry narodowej.<b> Współpracujemy wraz z Polską Federacją SOCCA</b> wysyłając drużyny na ich oficjalne turnieje,</p>
+      <p> ale na piłce nożnej się nie kończy nasza przygoda ze sportem.<b> Zajmujemy się również organizacją turniejów z siatkówki plażowej,</b> które cieszą się ogromną popularnością. Na te turnieje może zapisać się każdy i wszyscy będą się świetnie bawić.<b> Specjalnie selekcjonujemy miejsca,</b> na których organizujemy nasze wydarzenie po to, aby sekcja około eventowa mogła umilić czas na oczekiwaniu na swoje spotkanie.</p>
+    </section>
+    <section id="sponsors">
+      <h1>Nasi partnerzy</h1>
+      <h2>Wspierają nas w organizacji wydarzeń sportowych.</h2>
+      <div class="sponsors__list">
+        <img src="dist/img/pobrane (1).jpg" alt="Sponsor 1" class="sponsor__logo">
+        <img src="dist/img/logo WebGoat.png" alt="Sponsor 2" class="sponsor__logo">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Kontakt</h1>
+      <h2>Jeśli chcesz z nami współpracować, skontaktuj się przez formularz kontaktowy!</h2>
+      <form id="contactForm" action="https://formspree.io/f/meozaeab" method="POST">
+        <label for="name">Imię i Nazwisko:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Wyślij! - odpiszemy ci</button>
+    </section>
+        <section id="faq">
+      <h1>Najczęściej zadawane pytania (FAQ)</h1>
+      <div class="faq__list">
+        <div class="faq__item">
+          <h3 class="faq__question">Jak mogę zapisać się na wydarzenie sportowe?</h3>
+          <p class="faq__answer">Wystarczy kliknąć przycisk "Zapisz się" przy wybranym wydarzeniu i wypełnić formularz zgłoszeniowy. Po rejestracji otrzymasz potwierdzenie na podany adres e-mail.</p>
         </div>
-        <div id="sponsors">
-                <h1>Patron techniczny:</h1>
-                <p></p>
-                <img src="images/Frame 1.jpg">
+        <div class="faq__item">
+          <h3 class="faq__question">Czy udział w turniejach jest płatny?</h3>
+          <p class="faq__answer">Tak, udział w turniejach jest płatny, ale staramy się, aby ceny były przystępne dla każdego. Szczegóły dotyczące opłat znajdziesz przy opisie każdego wydarzenia.</p>
         </div>
-        <div id="footer"></div>
-    </body>
-</html>
+        <div class="faq__item">
+          <h3 class="faq__question">Czy mogę zapisać się indywidualnie, czy muszę mieć drużynę?</h3>
+          <p class="faq__answer">Możesz zapisać się zarówno indywidualnie, jak i drużynowo. Osoby indywidualne zostaną przydzielone do zespołów przez organizatorów.</p>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__question">Jak mogę skontaktować się z organizatorami?</h3>
+          <p class="faq__answer">Możesz skorzystać z formularza kontaktowego na stronie lub napisać do nas bezpośrednio na adres e-mail podany w sekcji Kontakt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h1>Galeria wydarzeń sportowych</h1>
+      <h2>Zobacz zdjęcia i filmy z naszych turniejów!</h2>
+      <div class="gallery__grid">
+        <img src="dist/img/495742039_122132506364793453_847548069763721384_n.jpg" alt="Turniej piłki nożnej WroOpenCup" class="gallery__item">
+        <img src="dist/img/513707733_122142336320793453_8478196395937491140_n.jpg" alt="Siatkówka plażowa Wrocław" class="gallery__item">
+        <img src="dist/img/499706440_122139657080793453_6177912012694863655_n.jpg" alt="Zawodnicy WroOpenCup" class="gallery__item">
+      </div>
+    </section>
+
+            <section class="social-media">
+            <h3>Śledź nas w mediach społecznościowych</h3>
+            <a href="https://www.facebook.com/profile.php?id=61573803602750&locale=pl_PL" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/wro_open_cup/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@wroopencup8" target="_blank">TikTok</a>
+        </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WroOpenCup. Wszystkie prawa zastrzeżone.</p>
+    <p>Strona stworzona przez <a href="https://webgoat.pl">WebGoat.pl</a>.</p>
+
+  <div class="stopki-container">
+    <div class="stopka">
+        <h1>ADRES</h1>
+        <br>
+        <p>NIP: </p>
+        <p>REGON: </p>
+        <br>
+        <p>Nr rachunku:</p>
+        <p></p>
+    </div>
+    <div class="stopka">
+        <h1>KONTAKT</h1>
+        <br>
+        <p>tel. 786 819 948</p>
+        <p>wroopencup@gmail.com</p>
+    <nav>
+      <a href="tel:+48786819948" title="Zadzwoń" rel="noopener">
+        <img src="dist/img/352510_local_phone_icon.svg" alt="Telefon">
+      </a>
+      <a href="https://wa.me/48786819948" title="WhatsApp" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+    </nav>
+    </div>
+    <div class="stopka">
+      <a href="dist/img/Polityka prywatności.pdf" target="_blank" rel="noopener">Polityka prywatności</a>
+  </div>
+</footer>
+  <div id="cookie-banner" class="cookie-banner">
+  <p>
+    Ta strona korzysta z plików cookie w celu zapewnienia najlepszej jakości usług oraz celów marketingowych. Kontynuując korzystanie ze strony, akceptujesz naszą <a href="dist/img/" target="_blank">politykę prywatności</a>.
+  </p>
+  <button id="cookie-accept">Akceptuję</button>
+</div>
+</body>
